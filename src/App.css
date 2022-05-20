@@ -3,6 +3,19 @@
 .docs-main {
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    background-color: #ecebeb;
+    min-height: 100vh;
+}
+
+.top-bar {
+    background-color: rgb(54, 82, 241);
+    color: rgb(255, 255, 255);
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.top-bar h1{
+ margin: 0 !important;
 }
 
 .add-docs {
@@ -10,6 +23,7 @@
     width: 200px;
     background-color: #ffc107;
     border: none;
+    border-radius: 8px;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
 }
@@ -18,7 +32,7 @@
     width: 95%;
     height: 40px;
     outline: none;
-    border: 1px solid #676767;
+    border: 1px solid #cccccc;
     border-radius: 0px;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
@@ -40,9 +54,15 @@
 
 .grid-child {
     padding: 20px;
-    background-color: rgb(98, 98, 98);
+    background-color: rgb(212, 212, 212);
+    color: #3a3a3a;
+    border-radius: 5px;
     width: 300px;
     cursor: pointer;
+}
+
+.grid-child h4 {
+  font-weight: 600;
 }
 
 .editDocs-main {

@@ -52,8 +52,9 @@ export default function Docs({
     }, [])
     return (
         <div className='docs-main'>
+            <div className='top-bar'>
             <h1>Docs Clone</h1>
-
+            </div>
             <button
                 className='add-docs'
                 onClick={handleOpen}
@@ -64,7 +65,7 @@ export default function Docs({
                 {docsData.map((doc) => {
                     return (
                         <div className='grid-child' onClick={() => getID(doc.id)}>
-                            <p>{doc.title}</p>
+                            <h4>{doc.title}</h4>
                             <div dangerouslySetInnerHTML={{ __html: doc.docsDesc }} />
                         </div>
                     )
